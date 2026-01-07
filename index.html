@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="/style.css" />
+    <title>Result Summary</title>
+  </head>
+  <body class="lg:w-[1440px] w-[375px] bg-[var(--Light-lavender)]">
+    <div
+      class="lg:w-[600px] md:w-[90%] w-[375px] mx-auto flex flex-col md:flex-col lg:flex-row my-[100px] bg-white rounded-[20px] shadow-[0px_15px_30px_rgba(0,0,0,0.3)]"
+    >
+      <!-- ==============LEFT SIDE========================= -->
+      <div
+        class="w-[320px] bg-gradient-to-b from-[var(--Light-slate-blue-background)] to-[var(--Light-royal-blue-background)] rounded-[20px] p-[30px] text-center flex flex-col gap-[30px] items-center"
+      >
+        <h2 class="text-[var(--Light-lavender)] text-[20px]">Your Result</h2>
+
+        <div
+          class="w-[150px] h-[150px] bg-gradient-to-b from-[var(--Violet-blue-circle)] to-[var(--Persian-blue-circle)] rounded-full flex flex-col justify-center"
+        >
+          <h1 class="text-[var(--Pale-blue)] text-[50px]">76</h1>
+          <p class="text-[var(--Light-lavender)] text-[18px]">of 100</p>
+        </div>
+
+        <div class="flex flex-col gap-[10px]">
+          <h2 class="text-[var(--Pale-blue)] text-[30px]">Great</h2>
+          <p class="text-[18px] text-[var(--Light-lavender)]">
+            You scored higher than 65% of the people who have taken <br />
+            these tests.
+          </p>
+        </div>
+      </div>
+      <!-- ===============RIGHT SIDE===================== -->
+      <div class="w-[320px] p-[30px] flex flex-col items-start gap-[30px]">
+        <h2 class="text-[20px] text-[text-[var(--Light-lavender)]]">Summary</h2>
+        <!-- SCORE SECTION -->
+        <div class="w-full flex flex-col gap-[15px] text-[18px]">
+          <!-- EACH SCORE -->
+          <div
+            class="w-full text-[var(--Lightred)] flex justify-between items-center bg-[rgb(246,233,233)] p-[10px] rounded-[10px]"
+          >
+            <div class="flex items-center gap-[10px]">
+              <img src="/assets/images/icon-reaction.svg" alt="" />
+              <p>Reaction</p>
+            </div>
+
+            <p class="text-[var(--Dark-gray-blue)] font-semibold">
+              80 <span class="text-[var(--Light-lavender)]">/ 100</span>
+            </p>
+          </div>
+          <!-- EACH SCORE -->
+          <div
+            class="w-full text-[var(--Orangey-yellow)] flex justify-between items-center bg-[rgb(241,234,221)] p-[10px] rounded-[10px]"
+          >
+            <div class="flex items-center gap-[10px]">
+              <img src="/assets/images/icon-memory.svg" alt="" />
+              <p>Memory</p>
+            </div>
+
+            <p class="num">92 <span>/ 100</span></p>
+          </div>
+          <!-- EACH SCORE -->
+          <div
+            class="w-full text-[var(--Green-teal)] flex justify-between items-center bg-[rgb(234,245,245)] p-[10px] rounded-[10px]"
+          >
+            <div class="flex items-center gap-[10px]">
+              <img src="/assets/images/icon-verbal.svg" alt="" />
+              <p>Verbal</p>
+            </div>
+
+            <p class="num">61 <span>/ 100</span></p>
+          </div>
+          <!-- EACH SCORE -->
+          <div
+            class="w-full text-[var(--Cobalt-blue)] flex justify-between items-center bg-[rgb(220,220,232)] p-[10px] rounded-[10px]"
+          >
+            <div class="flex items-center gap-[10px]">
+              <img src="/assets/images/icon-visual.svg" alt="" />
+              <p>Visual</p>
+            </div>
+
+            <p class="num">73 <span>/ 100</span></p>
+          </div>
+        </div>
+
+        <button>Continue</button>
+      </div>
+    </div>
+  </body>
+</html>
