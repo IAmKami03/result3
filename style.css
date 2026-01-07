@@ -24,7 +24,6 @@ body {
 }
 
 button {
-  background-color: var(--Dark-gray-blue);
   color: var(--Pale-blue);
   width: 100%;
   height: 50px;
